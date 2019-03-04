@@ -1,0 +1,20 @@
+<form>
+    <h2>Reqeust-Status: {{ $ctrl.status }}</h2>
+    <div layout="row">
+        <md-input-container>
+            <label>Host-Adresse</label>
+            <input type="text" name="host" ng-model="$ctrl.host" required>
+        </md-input-container>
+        <md-button class="md-primary md-raised" ng-disabled="$ctrl.formular.$invalid" ng-click="$ctrl.absenden()">
+            Überprüfen
+        </md-button>
+    </div>
+    <md-content layout="column">
+        <span>Host IP: {{ $ctrl.ip }}</span>
+        <span>Location: {{ $ctrl.location }}</span>
+        <span>Geo-Location: {{ $ctrl.latitude }} ° Breitengrad, {{ $ctrl.longitude }} ° Längengrad</span>
+        <span>Sonnenaufgang: {{ $ctrl.sunrise | date : 'mediumTime' : $ctrl.timezone }}</span>
+        <span>Sonnenuntergang: {{ $ctrl.sunset | date : 'mediumTime' : $ctrl.timezone }}</span>
+        <span>Wetter: {{ $ctrl.weather }}</span>
+    </md-content>
+</form>

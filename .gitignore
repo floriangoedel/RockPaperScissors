@@ -1,0 +1,6 @@
+node_modules/**
+Frontend/karma.conf.js
+Frontend/npm-shrinkwrap.json
+Frontend/e2e-tests
+Frontend/app/vendor/
+Backend/vendor/
