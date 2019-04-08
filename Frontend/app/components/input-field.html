@@ -1,0 +1,35 @@
+<style>
+    .inputField {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .image {
+        width: auto;
+        height: 8rem;
+        transition-duration: 0.3s;
+        border-radius: 100%;
+    }
+
+    .image:hover {
+        transform: scale(1.3);
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .image:hover + .fieldName {
+        transform: translateY(1.2rem);
+        font-size: 1.7rem;
+    }
+
+    .fieldName {
+        transition-duration: 0.3s;
+    }
+
+</style>
+<div class="inputField">
+    <img src="{{ $ctrl.imageSource }}" class="image" ng-click="$ctrl.setPlayerChoice()">
+    <h2 class="fieldName">{{ $ctrl.inputName }}</h2>
+</div>

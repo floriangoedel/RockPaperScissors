@@ -12,7 +12,9 @@
     },
     "autoload": {
         "psr-4": {
-            "HTL3R\\DoctrineORM\\" : "src"
+            "HTL3R\\RockPaperScissors\\src\\" : "src/",
+            "HTL3R\\RockPaperScissors\\config\\" : "config/",
+            "HTL3R\\RockPaperScissors\\classes\\" : "classes/"
         }
     }
 }

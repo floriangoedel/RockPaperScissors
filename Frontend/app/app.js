@@ -2,7 +2,7 @@
 
 // Einziges Modul dieser App und seine Abhängigkeiten
 var app = angular.module("Vorlage", [ "ngResource", "ngMessages", "ngLocale", "ngSanitize",
-    "ngAnimate", "ngMaterial", "ui.router" ]);
+    "ngAnimate", "ngMaterial", "ui.router"]);
 
 
 // Einstellungen für Debugging

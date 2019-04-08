@@ -1,0 +1,67 @@
+<style>
+    .error404 {
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: #0177D7;
+        color: white;
+    }
+
+    .classicWindowsSmiley {
+        font-size: 10rem;
+    }
+
+    .errorMessage {
+        font-size: 3rem;
+    }
+
+    .message-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+
+    .home-button-field {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width: 3rem;
+        height: 3rem;
+        position: absolute;
+        top: 0.3rem;
+        left: 0.3rem;
+        border-radius: 100%;
+        background-color: #0CC3ED;
+        transition-duration: 0.3s;
+    }
+
+    #home-button {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .home-button-field:hover {
+        border-radius: 30%;
+        cursor: pointer;
+    }
+
+
+</style>
+<div class="error404">
+    <a class="home-button-field" ui-sref="game">
+        <img src="../resources/baseline_home_white_18dp.png" id="home-button">
+    </a>
+    <br>
+    <br>
+    <br>
+    <div class="message-block">
+        <h1 class="errorMessage">Oops, diese Seite existiert nicht!</h1>
+        <span class="classicWindowsSmiley">:(</span>
+    </div>
+</div>

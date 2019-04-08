@@ -1,0 +1,42 @@
+<style>
+    .inputFields {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        padding: 2.5rem;
+    }
+
+    .game {
+        background-color: white;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
+
+    .headline {
+        width: 100%;
+        height: 6rem;
+        font-size: 1.2rem;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #A85A11;
+    }
+
+</style>
+<div class="game">
+    <div class="headline">
+        <h1>Rock Paper Scissors ... but with monsters</h1>
+    </div>
+    <div class="inputFields">
+    <div ng-repeat="e in $ctrl.inputFieldVariations track by $index">
+        <input-field image-source="e.imageSource" input-name="e.inputName" playerchoice="$ctrl.analyseGame(choice)"></input-field>
+    </div>
+    <input-field></input-field>
+    </div>
+</div>
