@@ -138,7 +138,7 @@ app.controller("GameController", function ($log, $http) {
             data: parameter
         }).then(
             (response) => {
-               $log.debug(response);
+                $log.debug("Database Insert worked!");
             }, function (error) {
                 console.log(error);
             });
