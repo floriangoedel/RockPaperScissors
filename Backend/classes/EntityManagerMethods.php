@@ -1,4 +1,4 @@
-n<?php
+<?php
     namespace HTL3R\RockPaperScissors\classes;
     USE Doctrine\ORM\Tools\Setup;
     USE Doctrine\ORM\EntityManager;
